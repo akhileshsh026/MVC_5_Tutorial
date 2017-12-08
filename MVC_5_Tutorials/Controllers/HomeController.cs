@@ -11,6 +11,7 @@ namespace MVC_5_Tutorials.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            ViewBag.ValueFromIndexController = "12";
             return View();
         }
     }
