@@ -1,7 +1,17 @@
-﻿
+﻿@model List<MVC_5_Tutorials.Models.Car>
+
 @{
     ViewBag.Title = "Index";
 }
 
 <h2>@ViewBag.ValueFromIndexController - Index</h2>
+
+@{
+    foreach (var car in Model)
+    {
+        <ul style="background-color:antiquewhite;list-style-type:georgian">
+            <li> @car.Id - @car.Make - @car.Model </li>
+        </ul>
+    }
+ }
 
