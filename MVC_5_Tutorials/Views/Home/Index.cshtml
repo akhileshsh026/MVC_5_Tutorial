@@ -6,7 +6,7 @@
 }
 
 <h2>@ViewBag.ValueFromIndexController - Index</h2>
-   @{ a += 1;}
+@{ a += 1;}
 
 @{
     foreach (var car in Model)
@@ -15,6 +15,16 @@
             <li> @car.Id - @car.Make - @car.Model </li>
         </ul>
     }
- }
+}
 <p>Value: @a.ToString("C")</p>
+
+@helper CountChild(int count)
+{
+    @(count== 1 ? "child" : "Akhilesh");
+}
+
+@{  var l = 8;
+    <p> While @l and @CountChild(@l) </p>
+
+}
 
