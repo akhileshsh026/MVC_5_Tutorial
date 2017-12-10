@@ -2,9 +2,11 @@
 
 @{
     ViewBag.Title = "Index";
+    var a = 8;
 }
 
 <h2>@ViewBag.ValueFromIndexController - Index</h2>
+   @{ a += 1;}
 
 @{
     foreach (var car in Model)
@@ -14,4 +16,5 @@
         </ul>
     }
  }
+<p>Value: @a.ToString("C")</p>
 
