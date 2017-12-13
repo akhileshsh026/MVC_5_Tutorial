@@ -71,6 +71,9 @@ namespace MVC_5_Tutorials.Controllers
             {
                 return HttpNotFound();
             }
+
+            var Myval = Request.QueryString["somesuch"];
+            var Myval1 = Request["somesuch"];
             return View(product);
         }
 
