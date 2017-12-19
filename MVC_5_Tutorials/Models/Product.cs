@@ -14,7 +14,18 @@ namespace MVC_5_Tutorials.Models
     
     public partial class Product
     {
-        public System.Guid ProductId { get; set; }
+        private Guid productId;
+
+        public Guid GetProductId()
+        {
+            return productId;
+        }
+
+        public void SetProductId(Guid value)
+        {
+            productId = value;
+        }
+
         public string Name { get; set; }
         public decimal Price { get; set; }
     }

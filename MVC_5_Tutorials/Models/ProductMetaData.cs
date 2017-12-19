@@ -12,7 +12,7 @@ namespace MVC_5_Tutorials.Models
        sealed class MetaData
         {
             [Key]
-            public System.Guid ProductId { get; set; }
+            public Guid ProductId { get; set; }
 
             [Display(Name="Product Name")]
             [Required]
