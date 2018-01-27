@@ -61,6 +61,11 @@
     </div>
 
     <div class="form-group">
+        @Html.LabelFor(p => p.Price)
+        @Html.TextAreaFor(p => p.Price, 5, 30, new { @class = "form-control" })   // this is maily for the description area here 5 is row and 30 is column.
+    </div>
+
+    <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
             <input type="submit" value="Create" class="btn btn-default" />
         </div>
