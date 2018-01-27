@@ -47,25 +47,25 @@ namespace MVC_5_Tutorials.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(/*[Bind(Include = "ProductId,Name,Price")] Product product*/)
-        {
-            //if (ModelState.IsValid)
-            //{
-            //    product.ProductId = Guid.NewGuid();
-            //    db.Products.Add(product);
-            //    db.SaveChanges();
-            //    return RedirectToAction("Index");
-            //}
+        //public ActionResult Create(/*[Bind(Include = "ProductId,Name,Price")] Product product*/)
+        //{
+        //    //if (ModelState.IsValid)
+        //    //{
+        //    //    product.ProductId = Guid.NewGuid();
+        //    //    db.Products.Add(product);
+        //    //    db.SaveChanges();
+        //    //    return RedirectToAction("Index");
+        //    //}
 
-            //var product = new Product();
-            //product.ProductId =Guid.NewGuid();
-            //product.Name = Request["Name"];
-            //product.Price = Decimal.Parse(Request["Price"]);
+        //    //var product = new Product();
+        //    //product.ProductId =Guid.NewGuid();
+        //    //product.Name = Request["Name"];
+        //    //product.Price = Decimal.Parse(Request["Price"]);
 
 
 
-             return View(product);
-        }
+        //     return View(product);
+        //}
 
         // GET: Products/Edit/5
         public ActionResult Edit(Guid? id)
