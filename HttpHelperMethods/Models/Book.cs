@@ -33,8 +33,11 @@ namespace HttpHelperMethods.Models
         public int CopiesS { get; set; }
         public float Price { get; set; }
         public string Cate { get; set; }
-        public Genre Genre { get; set; }
+        [Required]
+        public Genre? Genre { get; set; }
         public Availability Availability { get; set; }
+
+        public bool InStock { get; set; }
 
 
     }
