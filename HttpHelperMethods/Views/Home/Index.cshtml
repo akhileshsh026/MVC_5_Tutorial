@@ -16,12 +16,28 @@
 
     <div class="form-group">
         @Html.LabelFor(p => p.CopiesS)
-        @Html.EditorFor(p => p.CopiesS , new { @class = "form-control" })
+        @Html.EditorFor(p => p.CopiesS, new { @class = "form-control" })
     </div>
 
     <div class="form-group">
+        @Html.LabelFor(p => p.YearP)
+        @Html.DropDownListFor(p => p.YearP, new SelectList(
+       new List<object>
+        {
+            new { Text = 12},
+            new { Text = 23},
+            new { Text = 112},
+            new { Text = 233},
+            new { Text = 125},
+            new { Text = 293}
+        }, "Text", "Text", 293),        
+        new { @class = "form-control" })
+
+
+    </div>
+    <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
-              <input type="submit" value="Create" class="btn btn-default" />
+            <input type="submit" value="Create" class="btn btn-default" />
         </div>
     </div>
 }
