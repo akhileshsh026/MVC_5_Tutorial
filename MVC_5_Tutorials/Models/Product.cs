@@ -11,21 +11,11 @@ namespace MVC_5_Tutorials.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Product
     {
-        private Guid productId;
-
-        public Guid GetProductId()
-        {
-            return productId;
-        }
-
-        public void SetProductId(Guid value)
-        {
-            productId = value;
-        }
-
+        public System.Guid ProductId { get; set; }
         public string Name { get; set; }
         public decimal Price { get; set; }
     }

@@ -51,6 +51,7 @@
         @Html.CheckBoxFor(p => p.InStock, new { @class = "from-control" })
     </div>
 
+    <br/>
     <div class="from-group">
         @Html.RadioButtonFor(p => p.Availability , HttpHelperMethods.Models.Availability.Pickup   , new { id = @HttpHelperMethods.Models.Availability.Pickup , @checked = true , @GroupName= "My Group"} )
         <label for="@HttpHelperMethods.Models.Availability.Pickup">@HttpHelperMethods.Models.Availability.Pickup</label>
@@ -59,10 +60,11 @@
         @Html.RadioButtonFor(p => p.Availability , HttpHelperMethods.Models.Availability.Reseller , new { id = HttpHelperMethods.Models.Availability.Reseller , @GroupName = "My Group"} )
         <label for="@HttpHelperMethods.Models.Availability.Reseller">@HttpHelperMethods.Models.Availability.Reseller</label>
     </div>
+    <br />
 
     <div class="form-group">
         @Html.LabelFor(p => p.Price)
-        @Html.TextAreaFor(p => p.Price, 5, 30, new { @class = "form-control" })   // this is maily for the description area here 5 is row and 30 is column.
+        @Html.TextAreaFor(p => p.Price, 5, 30, new { @class = "form-control" })  
     </div>
 
     <div class="form-group">

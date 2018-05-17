@@ -107,8 +107,8 @@
     <Content Include="Global.asax" />
     <Content Include="Models\ACME_Products_Entites.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ACME_Products_Entites.Context.cs</LastGenOutput>
       <DependentUpon>ACME_Products_Entites.edmx</DependentUpon>
+      <LastGenOutput>ACME_Products_Entites.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Models\ACME_Products_Entites.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -132,7 +132,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\FormController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Global.asax.cs">
@@ -186,9 +185,7 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Form\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

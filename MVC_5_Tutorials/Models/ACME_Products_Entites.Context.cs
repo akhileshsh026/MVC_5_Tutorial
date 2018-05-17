@@ -13,10 +13,10 @@ namespace MVC_5_Tutorials.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ACME_ProductsEntities : DbContext
+    public partial class ACME_ProductsEntities1 : DbContext
     {
-        public ACME_ProductsEntities()
-            : base("name=ACME_ProductsEntities")
+        public ACME_ProductsEntities1()
+            : base("name=ACME_ProductsEntities1")
         {
         }
     

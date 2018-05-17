@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="ACME_ProductsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="ACME_ProductsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Products">
           <Key>
             <PropertyRef Name="ProductId" />
@@ -16,7 +16,8 @@
         <EntityContainer Name="ACME_ProductsModelStoreContainer">
           <EntitySet Name="Products" EntityType="Self.Products" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="ACME_ProductsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -28,7 +29,7 @@
           <Property Name="Name" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
           <Property Name="Price" Type="Decimal" Precision="10" Scale="4" Nullable="false" />
         </EntityType>
-        <EntityContainer Name="ACME_ProductsEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="ACME_ProductsEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Products" EntityType="Self.Product" />
         </EntityContainer>
       </Schema>
@@ -36,7 +37,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="ACME_ProductsModelStoreContainer" CdmEntityContainer="ACME_ProductsEntities">
+        <EntityContainerMapping StorageEntityContainer="ACME_ProductsModelStoreContainer" CdmEntityContainer="ACME_ProductsEntities1">
           <EntitySetMapping Name="Products">
             <EntityTypeMapping TypeName="ACME_ProductsModel.Product">
               <MappingFragment StoreEntitySet="Products">
