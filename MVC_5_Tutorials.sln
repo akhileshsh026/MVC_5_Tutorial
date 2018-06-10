@@ -25,8 +25,11 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Bob_Tutorials_Web", "Bob_Tu
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "50202"
+		SlnRelativePath = "Bob_Tutorials_Web\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouTubeCOmplete", "YouTubeCOmplete\YouTubeCOmplete.csproj", "{7EB638D6-7691-41E8-88C3-6A7A5ED4A73F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,6 +49,10 @@ Global
 		{0445DDD0-AC66-44EE-AA3B-6AA3EA78A4FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0445DDD0-AC66-44EE-AA3B-6AA3EA78A4FF}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{0445DDD0-AC66-44EE-AA3B-6AA3EA78A4FF}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{7EB638D6-7691-41E8-88C3-6A7A5ED4A73F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EB638D6-7691-41E8-88C3-6A7A5ED4A73F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EB638D6-7691-41E8-88C3-6A7A5ED4A73F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EB638D6-7691-41E8-88C3-6A7A5ED4A73F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
