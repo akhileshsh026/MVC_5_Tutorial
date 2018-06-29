@@ -9,11 +9,11 @@ namespace YouTubeCOmplete.Controllers
 {
     public class EmployeeController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Details()
         {
             Employee emp = new Employee()
             {
-                id = 1,
+                Id = 1,
                 Name ="Akhilesh Kumar Sahu",
                 age=12,
                 city="Mandla"
