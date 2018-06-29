@@ -9,18 +9,13 @@ namespace YouTubeCOmplete.Controllers
 {
     public class EmployeeController : Controller
     {
-        public ActionResult Details()
+        public ActionResult Details(int ID)
         {
-            Employee emp = new Employee()
-            {
-                Id = 1,
-                Name ="Akhilesh Kumar Sahu",
-                age=12,
-                city="Mandla"
-            };
+            EmployeeContext employeeContext = new EmployeeContext();
+            Employee emp1= employeeContext.Employees.Single(emp => emp.Id == ID);
 
 
-            return View(emp);
+            return View(emp1);
         }
     }
 }
