@@ -6,7 +6,7 @@
 <h2>List Of Countries</h2>
 
 <ul>
-    @foreach(var StrCat in ViewData["Countries"])
+    @foreach(var StrCat in (List<string>)ViewData["Countries"])
     {
         <li> @StrCat </li>
     }
