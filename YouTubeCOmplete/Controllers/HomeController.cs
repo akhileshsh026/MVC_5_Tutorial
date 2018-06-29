@@ -9,9 +9,16 @@ namespace YouTubeCOmplete.Controllers
     public class HomeController : Controller
     {
         // GET: Home
-        public string Index(string id)
+        public List<string> Index()
         {
-            return id + Request.QueryString["name"];
+            return new List<string>()
+            {
+                "India",
+                "US",
+                "UK",
+                "France"
+            };
+
         }
     }
 }
