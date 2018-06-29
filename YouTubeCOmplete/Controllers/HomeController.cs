@@ -11,7 +11,7 @@ namespace YouTubeCOmplete.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            ViewBag.Countries = new List<string>()
+            ViewData["Countries"] = new List<string>()
             {
                 "India",
                 "US",
