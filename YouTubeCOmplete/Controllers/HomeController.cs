@@ -9,9 +9,9 @@ namespace YouTubeCOmplete.Controllers
     public class HomeController : Controller
     {
         // GET: Home
-        public List<string> Index()
+        public ActionResult Index()
         {
-            return new List<string>()
+            ViewBag.Countries = new List<string>()
             {
                 "India",
                 "US",
@@ -19,6 +19,7 @@ namespace YouTubeCOmplete.Controllers
                 "France"
             };
 
+            return View();
         }
     }
 }
