@@ -20,7 +20,7 @@ namespace YouTubeCOmplete.Controllers
             };
 
 
-            return View();
+            return View(emp);
         }
     }
 }
