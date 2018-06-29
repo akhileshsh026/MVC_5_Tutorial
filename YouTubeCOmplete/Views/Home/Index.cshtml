@@ -3,5 +3,12 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>ss
+<h2>List Of Countries</h2>
+
+<ul>
+    @foreach(var StrCat in ViewBag.Countries)
+    {
+        <li> @StrCat </li>
+    }
+</ul>
 
